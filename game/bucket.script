@@ -1,0 +1,31 @@
+--go.property("type", 1)
+
+function init(self)
+	--msg.post("#front", "play_animation", { id = hash("bucket_" .. self.type .. "_front_on") })
+	--msg.post("#back", "play_animation", { id = hash("bucket_" .. self.type .. "_back_on") })
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end

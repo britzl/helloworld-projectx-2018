@@ -1,0 +1,23 @@
+local COLLISION_RESPONSE = hash("collision_response")
+local BALL = hash("ball")
+
+function init(self)
+	msg.post("#eyes", "disable")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == COLLISION_RESPONSE and message.group == BALL then
+		msg.post("#eyes", "enable")
+		msg.post("#pin", "play_animation", { id = hash("pin_acorn_03") })
+		--go.cancel_animations(".", "position")
+		go.animate(".", "position", go.PLAYBACK_ONCE_FORWARD, go.get_position(), go.EASING_LINEAR, 0.1, 0, function()
+			msg.post("#eyes", "disable")
+			msg.post("#pin", "play_animation", { id = hash("pin_acorn_01") })
+		end)
+	end
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end

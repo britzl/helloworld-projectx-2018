@@ -1,0 +1,44 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function final(self)
+	msg.post(".", "release_input_focus")
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	if not action_id then
+		local action_pos = vmath.vector3(action.x, action.y, 0)
+		
+		local pos = go.get_world_position()
+		local angle = -math.atan2(action_pos.x - pos.x, action_pos.y - pos.y)
+		local quat = vmath.quat_rotation_z(angle)
+		
+		go.set_rotation(quat)
+	elseif action_id == hash("touch") then
+		if action.released then
+			local action_pos = vmath.vector3(action.x, action.y, 0)
+			local rot = go.get_rotation()
+			local pos = go.get_position()
+			local ball = factory.create("game#ballfactory", pos)
+			local force = vmath.rotate(rot, vmath.vector3(0, 1, 0)) * vmath.length(pos - action_pos) * 250
+			
+			msg.post(msg.url(nil, ball, "collisionobject"), "apply_force", { position = pos, force = force })
+		end
+	end
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end
