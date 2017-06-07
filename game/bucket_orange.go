@@ -14,46 +14,6 @@ components {
   }
 }
 embedded_components {
-  id: "back"
-  type: "sprite"
-  data: "tile_set: \"/assets/game.atlas\"\n"
-  "default_animation: \"bucketOrange_back_on\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: -0.1
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-}
-embedded_components {
-  id: "front"
-  type: "sprite"
-  data: "tile_set: \"/assets/game.atlas\"\n"
-  "default_animation: \"bucketOrange_front_on\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-}
-embedded_components {
   id: "bucket"
   type: "collisionobject"
   data: "collision_shape: \"\"\n"
@@ -68,7 +28,7 @@ embedded_components {
   "    shape_type: TYPE_BOX\n"
   "    position {\n"
   "      x: 0.0\n"
-  "      y: 31.284\n"
+  "      y: -28.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -80,7 +40,7 @@ embedded_components {
   "    index: 0\n"
   "    count: 3\n"
   "  }\n"
-  "  data: 100.0\n"
+  "  data: 35.0\n"
   "  data: 50.0\n"
   "  data: 10.0\n"
   "}\n"
@@ -114,8 +74,8 @@ embedded_components {
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
   "    position {\n"
-  "      x: 0.0\n"
-  "      y: -95.766\n"
+  "      x: -48.0\n"
+  "      y: -38.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -130,8 +90,8 @@ embedded_components {
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
   "    position {\n"
-  "      x: -120.0\n"
-  "      y: 79.455\n"
+  "      x: 48.0\n"
+  "      y: -38.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -143,29 +103,10 @@ embedded_components {
   "    index: 3\n"
   "    count: 3\n"
   "  }\n"
-  "  shapes {\n"
-  "    shape_type: TYPE_BOX\n"
-  "    position {\n"
-  "      x: 120.0\n"
-  "      y: 78.549\n"
-  "      z: 0.0\n"
-  "    }\n"
-  "    rotation {\n"
-  "      x: 0.0\n"
-  "      y: 0.0\n"
-  "      z: 0.0\n"
-  "      w: 1.0\n"
-  "    }\n"
-  "    index: 6\n"
-  "    count: 3\n"
-  "  }\n"
-  "  data: 160.0\n"
-  "  data: 100.0\n"
-  "  data: 10.0\n"
-  "  data: 20.0\n"
+  "  data: 14.0\n"
   "  data: 60.0\n"
   "  data: 10.0\n"
-  "  data: 20.0\n"
+  "  data: 14.0\n"
   "  data: 60.0\n"
   "  data: 10.0\n"
   "}\n"
@@ -186,16 +127,16 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "eyes"
+  id: "sprite"
   type: "sprite"
   data: "tile_set: \"/assets/game.atlas\"\n"
-  "default_animation: \"bucketOrange_eyesOpen_on\"\n"
+  "default_animation: \"shipYellow\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
     x: 0.0
-    y: 183.676
+    y: 0.0
     z: 0.0
   }
   rotation {

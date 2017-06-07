@@ -100,26 +100,6 @@ instances {
   }
 }
 instances {
-  id: "pin9_1"
-  prototype: "/game/pin.go"
-  position {
-    x: 640.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
   id: "pin10_1"
   prototype: "/game/pin.go"
   position {
@@ -480,11 +460,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo"
-  prototype: "/game/bamboo.go"
+  id: "metal"
+  prototype: "/game/metal.go"
   position {
-    x: 533.215
-    y: 430.677
+    x: 497.502
+    y: 440.88
     z: 0.0
   }
   rotation {
@@ -500,11 +480,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo1"
-  prototype: "/game/bamboo.go"
+  id: "metal1"
+  prototype: "/game/metal.go"
   position {
-    x: 650.754
-    y: 430.677
+    x: 715.802
+    y: 439.605
     z: 0.0
   }
   rotation {
@@ -520,10 +500,10 @@ instances {
   }
 }
 instances {
-  id: "bamboo2"
-  prototype: "/game/bamboo.go"
+  id: "metal2"
+  prototype: "/game/metal.go"
   position {
-    x: 594.616
+    x: 606.095
     y: 395.591
     z: 0.0
   }
@@ -540,11 +520,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo21"
-  prototype: "/game/bamboo.go"
+  id: "metal21"
+  prototype: "/game/metal.go"
   position {
-    x: 456.025
-    y: 460.501
+    x: 387.151
+    y: 484.735
     z: 0.0
   }
   rotation {
@@ -560,11 +540,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo22"
-  prototype: "/game/bamboo.go"
+  id: "metal23"
+  prototype: "/game/metal.go"
   position {
-    x: 387.607
-    y: 460.501
+    x: 826.31
+    y: 485.052
     z: 0.0
   }
   rotation {
@@ -580,11 +560,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo23"
-  prototype: "/game/bamboo.go"
+  id: "metal26"
+  prototype: "/game/metal.go"
   position {
-    x: 719.172
-    y: 456.992
+    x: 288.881
+    y: 280.934
     z: 0.0
   }
   rotation {
@@ -600,71 +580,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo24"
-  prototype: "/game/bamboo.go"
+  id: "metal4"
+  prototype: "/game/metal.go"
   position {
-    x: 787.59
-    y: 456.992
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bamboo25"
-  prototype: "/game/bamboo.go"
-  position {
-    x: 345.503
-    y: 314.893
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bamboo26"
-  prototype: "/game/bamboo.go"
-  position {
-    x: 273.576
-    y: 316.647
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bamboo3"
-  prototype: "/game/bamboo.go"
-  position {
-    x: 196.387
-    y: 334.19
+    x: 178.674
+    y: 326.394
     z: 0.0
   }
   rotation {
@@ -680,31 +600,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo4"
-  prototype: "/game/bamboo.go"
+  id: "metal271"
+  prototype: "/game/metal.go"
   position {
-    x: 145.512
-    y: 385.065
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: -0.38268343
-    w: 0.9238795
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bamboo27"
-  prototype: "/game/bamboo.go"
-  position {
-    x: 122.705
-    y: 453.484
+    x: 135.459
+    y: 438.68
     z: 0.0
   }
   rotation {
@@ -720,11 +620,11 @@ instances {
   }
 }
 instances {
-  id: "bamboo271"
-  prototype: "/game/bamboo.go"
+  id: "metal2711"
+  prototype: "/game/metal.go"
   position {
-    x: 122.705
-    y: 525.411
+    x: 135.459
+    y: 552.195
     z: 0.0
   }
   rotation {
@@ -794,7 +694,6 @@ embedded_instances {
   children: "pin4_1"
   children: "pin5_1"
   children: "pin6_1"
-  children: "pin9_1"
   data: ""
   position {
     x: 52.784
@@ -848,19 +747,15 @@ embedded_instances {
 }
 embedded_instances {
   id: "blockers"
-  children: "bamboo"
-  children: "bamboo1"
-  children: "bamboo2"
-  children: "bamboo21"
-  children: "bamboo22"
-  children: "bamboo23"
-  children: "bamboo24"
-  children: "bamboo25"
-  children: "bamboo26"
-  children: "bamboo27"
-  children: "bamboo271"
-  children: "bamboo3"
-  children: "bamboo4"
+  children: "metal"
+  children: "metal1"
+  children: "metal2"
+  children: "metal21"
+  children: "metal23"
+  children: "metal26"
+  children: "metal271"
+  children: "metal2711"
+  children: "metal4"
   data: ""
   position {
     x: 0.0

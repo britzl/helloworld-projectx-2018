@@ -53,6 +53,7 @@ app_icon_192x192 = /assets/appicons/icon_192.png
 gravity_y = -5.0
 debug = 0
 scale = 0.02
+max_collisions = 200
 
 [sound]
 max_sound_buffers = 64

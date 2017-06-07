@@ -1,19 +1,4 @@
 images {
-  image: "/assets/images/cannon_aim_03.png"
-}
-images {
-  image: "/assets/images/papa.png"
-}
-images {
-  image: "/assets/images/papa_02.png"
-}
-images {
-  image: "/assets/images/pin_acorn_01.png"
-}
-images {
-  image: "/assets/images/cannon_aim_01.png"
-}
-images {
   image: "/assets/images/Hill 9.png"
 }
 images {
@@ -41,67 +26,37 @@ images {
   image: "/assets/images/Mountain 3.png"
 }
 images {
-  image: "/assets/images/pin_acorn_02.png"
+  image: "/assets/images/shipBeige.png"
 }
 images {
-  image: "/assets/images/pin_acorn_03.png"
+  image: "/assets/images/shipBlue.png"
 }
 images {
-  image: "/assets/images/pin_acorn_04.png"
+  image: "/assets/images/shipGreen.png"
 }
 images {
-  image: "/assets/images/bucketBlue_back_on.png"
+  image: "/assets/images/shipPink.png"
 }
 images {
-  image: "/assets/images/bucketBlue_front_on.png"
+  image: "/assets/images/shipYellow.png"
 }
 images {
-  image: "/assets/images/bucketGreen_back_on.png"
+  image: "/assets/images/ufoRed.png"
 }
 images {
-  image: "/assets/images/bucketGreen_eyesOpen_on.png"
+  image: "/assets/images/spinner.png"
 }
 images {
-  image: "/assets/images/bucketGreen_front_on.png"
+  image: "/assets/images/spinner_dead.png"
 }
 images {
-  image: "/assets/images/bucketOrange_back_on.png"
+  image: "/assets/images/spinner_hit.png"
 }
 images {
-  image: "/assets/images/bucketOrange_eyesOpen_on.png"
+  image: "/assets/images/dome.png"
 }
 images {
-  image: "/assets/images/bucketOrange_front_on.png"
-}
-images {
-  image: "/assets/images/bucketPink_back_on.png"
-}
-images {
-  image: "/assets/images/bucketPink_eyesOpen_on.png"
-}
-images {
-  image: "/assets/images/bucketPink_front_on.png"
-}
-images {
-  image: "/assets/images/bucketRed_back_on.png"
-}
-images {
-  image: "/assets/images/bucketRed_eyesOpen_on.png"
-}
-images {
-  image: "/assets/images/bucketRed_front_on.png"
-}
-images {
-  image: "/assets/images/bucketBlue_eyesOpen_on.png"
-}
-images {
-  image: "/assets/images/blocker_bamboo_curved.png"
-}
-images {
-  image: "/assets/images/blocker_bamboo_straight.png"
-}
-images {
-  image: "/assets/images/blocker_bamboo_tail.png"
+  image: "/assets/images/elementMetal013.png"
 }
 margin: 0
 extrude_borders: 2

@@ -1,3 +1,5 @@
+go.property("power", 2.5)
+
 function init(self)
 	msg.post(".", "acquire_input_focus")
 end
@@ -25,7 +27,7 @@ function on_input(self, action_id, action)
 			local ball = factory.create("game#ballfactory", pos)
 			-- the force of the ball is based on the distance from the cannon to the mouse/finger
 			-- the further away the more force
-			local force = vmath.rotate(rot, vmath.vector3(0, 1, 0)) * vmath.length(pos - action_pos) * 250
+			local force = vmath.rotate(rot, vmath.vector3(0, 1, 0)) * vmath.length(pos - action_pos) * self.power
 			
 			msg.post(msg.url(nil, ball, "collisionobject"), "apply_force", { position = pos, force = force })
 		end

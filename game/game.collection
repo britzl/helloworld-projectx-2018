@@ -21,9 +21,9 @@ instances {
 }
 instances {
   id: "bucket_red"
-  prototype: "/game/bucket_red.go"
+  prototype: "/game/bucket_beige.go"
   position {
-    x: 1002.841
+    x: 423.979
     y: 0.0
     z: 0.0
   }
@@ -43,28 +43,8 @@ instances {
   id: "bucket_pink"
   prototype: "/game/bucket_pink.go"
   position {
-    x: 795.961
+    x: 332.569
     y: -22.792
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.7
-    y: 0.7
-    z: 1.0
-  }
-}
-instances {
-  id: "bucket_blue"
-  prototype: "/game/bucket_blue.go"
-  position {
-    x: 340.124
-    y: 0.0
     z: 0.0
   }
   rotation {
@@ -83,8 +63,8 @@ instances {
   id: "bucket_green"
   prototype: "/game/bucket_green.go"
   position {
-    x: 552.264
-    y: -14.026
+    x: 241.104
+    y: 0.0
     z: 0.0
   }
   rotation {
@@ -103,7 +83,7 @@ instances {
   id: "bucket_orange"
   prototype: "/game/bucket_orange.go"
   position {
-    x: 119.219
+    x: 53.557
     y: 0.0
     z: 0.0
   }
@@ -136,6 +116,46 @@ instances {
   scale3 {
     x: 1.0
     y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bucket_blue"
+  prototype: "/game/bucket_blue.go"
+  position {
+    x: 149.173
+    y: -14.026
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 1.0
+  }
+}
+instances {
+  id: "bucket_orange1"
+  prototype: "/game/bucket_orange.go"
+  position {
+    x: 516.828
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
     z: 1.0
   }
 }
@@ -403,12 +423,13 @@ embedded_instances {
   children: "bucket_blue"
   children: "bucket_green"
   children: "bucket_orange"
+  children: "bucket_orange1"
   children: "bucket_pink"
   children: "bucket_red"
   data: ""
   position {
     x: 0.0
-    y: -7.506
+    y: 59.21
     z: 0.0
   }
   rotation {
@@ -418,9 +439,9 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 2.0
+    y: 2.0
+    z: 2.0
   }
 }
 embedded_instances {
