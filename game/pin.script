@@ -1,4 +1,7 @@
-local COLLISION_RESPONSE = hash("collision_response")
+go.property("damage", 10)
+go.property("damage_threshold", 0.5)
+
+local CONTACT_POINT_RESPONSE = hash("contact_point_response")
 local BALL = hash("ball")
 
 function init(self)
@@ -6,18 +9,29 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == COLLISION_RESPONSE and message.group == BALL then
-		msg.post("#eyes", "enable")
-		msg.post("#pin", "play_animation", { id = hash("pin_acorn_03") })
-		--go.cancel_animations(".", "position")
-		go.animate(".", "position", go.PLAYBACK_ONCE_FORWARD, go.get_position(), go.EASING_LINEAR, 0.1, 0, function()
-			msg.post("#eyes", "disable")
-			msg.post("#pin", "play_animation", { id = hash("pin_acorn_01") })
-		end)
+	if message_id == CONTACT_POINT_RESPONSE and message.group == BALL then
+		-- only inflict damage on the pin if the collision distance is above a
+		-- certain value
+		if message.distance > self.damage_threshold then
+			msg.post("/game/game", "increase_score", { score = 10 })
+			self.damage = self.damage - 1
+			if self.damage <= 0 then
+				go.delete()
+				return
+			end
+			
+			-- play a sound and let volume depend a bit on the force/distance of the collision
+			msg.post("/game/sounds", "play", { sound = "#acorn" .. math.random(1,2), gain = math.min(message.distance, 1) })
+			
+			-- change the visual representation of the eyes on the pin when it
+			-- takes damage
+			msg.post("#eyes", "enable")
+			msg.post("#pin", "play_animation", { id = hash("pin_acorn_03") })
+			-- create a delay before resetting the eyes to their normal animation
+			go.animate(".", "position", go.PLAYBACK_ONCE_FORWARD, go.get_position(), go.EASING_LINEAR, 0.1, 0, function()
+				msg.post("#eyes", "disable")
+				msg.post("#pin", "play_animation", { id = hash("pin_acorn_01") })
+			end)
+		end
 	end
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end

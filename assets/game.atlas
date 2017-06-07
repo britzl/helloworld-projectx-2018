@@ -94,6 +94,15 @@ images {
 images {
   image: "/assets/images/bucketBlue_eyesOpen_on.png"
 }
+images {
+  image: "/assets/images/blocker_bamboo_curved.png"
+}
+images {
+  image: "/assets/images/blocker_bamboo_straight.png"
+}
+images {
+  image: "/assets/images/blocker_bamboo_tail.png"
+}
 margin: 0
 extrude_borders: 2
 inner_padding: 0

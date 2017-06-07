@@ -2,9 +2,15 @@
 
 ## Known bugs
 * Gravity is weak
-* The ball is too large
+* The pins are too hard to destroy
+* All levels are the same
+* Some sounds are playing too often
 
 ## Todo
+* Add more levels
+* Add more sounds
+* Add new types of blockers
+* Add new types of pins with other properties and score
 
 
 ## Copyright

@@ -47,6 +47,7 @@ embedded_components {
   "mask: \"pin\"\n"
   "mask: \"bucket\"\n"
   "mask: \"ball\"\n"
+  "mask: \"blocker\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_SPHERE\n"

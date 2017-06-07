@@ -5,17 +5,10 @@ local function update_score(score)
 end
 
 function init(self)
+	print(msg.url())
 	self.score = 0
 	update_score(self.score)
-end
-
-function final(self)
-end
-
-function update(self, dt)
 	msg.post("@render:", "clear_color", { color = vmath.vector4(35/255,191/255,225/255, 1) })
-	-- Add update code here
-	-- Remove this function if not needed
 end
 
 function on_message(self, message_id, message, sender)
@@ -23,9 +16,4 @@ function on_message(self, message_id, message, sender)
 		self.score = self.score + message.score
 		update_score(self.score)
 	end
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end

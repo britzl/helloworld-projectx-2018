@@ -1,40 +1,12 @@
 local COLLISION_RESPONSE = hash("collision_response")
 local BUCKET = hash("bucket")
-local PIN = hash("pin")
-
-function init(self)
-end
-
-function final(self)
-	-- Add finalization code here
-	-- Remove this function if not needed
-end
-
-function update(self, dt)
-	-- Add update code here
-	-- Remove this function if not needed
-end
 
 function on_message(self, message_id, message, sender)
 	if message_id == COLLISION_RESPONSE then
-		if message.group == PIN then
-			local velocity = vmath.length(go.get("#collisionobject", "linear_velocity"))
-			if velocity > 20 then
-				msg.post("game", "increase_score", { score = 10 })
-			end
-		elseif message.group == BUCKET then
-			msg.post("game", "increase_score", { score = 500 })
+		-- add some score and remove the ball if colliding with a bucket
+		if message.group == BUCKET then
+			msg.post("/game/game", "increase_score", { score = 500 })
 			go.delete()
 		end
 	end
-end
-
-function on_input(self, action_id, action)
-	-- Add input-handling code here
-	-- Remove this function if not needed
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end

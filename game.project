@@ -2,7 +2,7 @@
 title = Empty project
 
 [bootstrap]
-main_collection = /game/game.collectionc
+main_collection = /controller/controller.collectionc
 render = /render/projectx.renderc
 
 [input]
@@ -50,7 +50,14 @@ app_icon_144x144 = /assets/appicons/icon_144.png
 app_icon_192x192 = /assets/appicons/icon_192.png
 
 [physics]
-gravity_y = -500.0
+gravity_y = -5.0
 debug = 0
 scale = 0.02
+max_collisions = 200
+
+[sound]
+max_sound_buffers = 64
+
+[collection_proxy]
+max_count = 50
 
