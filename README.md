@@ -1,5 +1,5 @@
 # Project X
-This is a game prototype created using the [Defold game engine](http://www.defold.com).
+This is a game prototype created using the [Defold game engine](http://www.defold.com). Download the Editor 2 pre-release for best results while working on this project.
 
 ## Known bugs
 * Gravity is unrealistic
