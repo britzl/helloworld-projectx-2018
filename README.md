@@ -1,4 +1,5 @@
 # Project X
+This is a game prototype created using the [Defold game engine](http://www.defold.com).
 
 ## Known bugs
 * Gravity is unrealistic
@@ -18,3 +19,6 @@
 * Limit the number of balls that are available per level
 * Improve the level select menu
 * Add a logo
+
+## Credits
+* Prototype graphics by [Kenney](http://www,kenney.nl)
