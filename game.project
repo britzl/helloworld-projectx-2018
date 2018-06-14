@@ -1,5 +1,5 @@
 [project]
-title = Empty project
+title = ProjectX
 
 [bootstrap]
 main_collection = /controller/controller.collectionc
@@ -60,4 +60,3 @@ max_sound_buffers = 64
 
 [collection_proxy]
 max_count = 50
-
